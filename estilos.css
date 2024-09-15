@@ -1,0 +1,111 @@
+/* Establecemos un reset básico para eliminar márgenes y paddings por defecto */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales para el cuerpo del documento */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8; /* Color de fondo pálido */
+    color: #333; /* Color de texto oscuro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* El cuerpo ocupa toda la altura de la pantalla */
+    margin: 0;
+}
+
+/* Estilos para el contenedor principal del convertidor */
+.converter-container {
+    background-color: #fff; /* Fondo blanco para contraste */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    padding: 30px; /* Espacio interno */
+    max-width: 400px; /* Ancho máximo del contenedor */
+    width: 100%;
+    text-align: center; /* Centra el texto y los elementos */
+}
+
+/* Estilos para el título */
+h1 {
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    color: #4a90e2; /* Color azul claro */
+}
+
+/* Estilos para el formulario */
+form {
+    display: flex;
+    flex-direction: column; /* Los elementos se alinean en columna */
+    gap: 15px; /* Espacio entre los elementos del formulario */
+}
+
+/* Estilos para las etiquetas */
+label {
+    font-weight: bold;
+    color: #555; /* Color gris oscuro para las etiquetas */
+}
+
+/* Estilos para los campos de selección y el campo de entrada */
+select, input {
+    padding: 10px;
+    font-size: 1em;
+    border: 2px solid #d3dce6; /* Borde gris claro */
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: #f7f9fc; /* Fondo muy claro */
+    color: #333;
+}
+
+/* Estilos cuando los campos están en foco (seleccionados) */
+select:focus, input:focus {
+    border-color: #4a90e2; /* Borde azul claro cuando se seleccionan */
+    outline: none; /* Elimina el borde predeterminado */
+}
+
+/* Estilos para el botón */
+button {
+    padding: 12px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    background-color: #4a90e2; /* Color azul claro */
+    color: #fff;
+    cursor: pointer; /* Cambia el cursor a mano cuando se pasa sobre el botón */
+    transition: background-color 0.3s; /* Transición suave al pasar sobre el botón */
+}
+
+/* Cambio de color cuando el usuario pasa el ratón sobre el botón */
+button:hover {
+    background-color: #357ab8; /* Azul más oscuro en hover */
+}
+
+/* Estilos para mostrar el resultado de la conversión */
+#result {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #27ae60; /* Color verde para el resultado */
+}
+
+/* Estilos para mostrar el mensaje de error */
+#error-message {
+    margin-top: 20px;
+    color: #e74c3c; /* Color rojo para el mensaje de error */
+    font-size: 1em;
+}
+
+/* Diseño responsivo para pantallas más pequeñas */
+@media (max-width: 600px) {
+    .converter-container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    button {
+        padding: 10px;
+    }
+}

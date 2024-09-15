@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertidor de Moneda</title>
+    <!-- Incluimos el archivo de estilos CSS -->
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="converter-container">
+        <!-- Título principal del convertidor -->
+        <h1>Convertidor de Moneda</h1>
+
+        <!-- Formulario para seleccionar las monedas y la cantidad a convertir -->
+        <form id="currency-form">
+            <!-- Selección de la moneda de origen -->
+            <label for="from-currency">De:</label>
+            <select id="from-currency">
+                <option value="USD">Dólar Estadounidense (USD)</option>
+                <option value="EUR">Euro (EUR)</option>
+                <option value="HNL">Lempira (HNL)</option>
+                <option value="MXN">Peso Mexicano (MXN)</option>
+                <option value="CNY">Yuan Chino (CNY)</option>
+            </select>
+
+            <!-- Selección de la moneda de destino -->
+            <label for="to-currency">A:</label>
+            <select id="to-currency">
+                <option value="USD">Dólar Estadounidense (USD)</option>
+                <option value="EUR">Euro (EUR)</option>
+                <option value="HNL">Lempira (HNL)</option>
+                <option value="MXN">Peso Mexicano (MXN)</option>
+                <option value="CNY">Yuan Chino (CNY)</option>
+            </select>
+
+            <!-- Campo para ingresar la cantidad a convertir -->
+            <label for="amount">Cantidad:</label>
+            <input type="number" id="amount" required>
+
+            <!-- Botón para realizar la conversión -->
+            <button type="submit">Convertir</button>
+        </form>
+
+        <!-- Área donde se mostrará el resultado de la conversión -->
+        <div id="result"></div>
+
+        <!-- Área donde se mostrará un mensaje de error si es necesario -->
+        <div id="error-message"></div>
+    </div>
+
+    <!-- Incluimos el archivo JavaScript que contiene la lógica de la aplicación -->
+    <script src="java.js"></script>
+</body>
+</html>
